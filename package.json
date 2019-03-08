@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "materialize-css": "^1.0.0-rc.2"
+    "axios": "^0.18.0",
+    "dropbox": "^4.0.16"
   },
   "devDependencies": {},
   "scripts": {
