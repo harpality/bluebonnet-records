@@ -1,10 +1,11 @@
 :root {
-  --main-bg-color: #f8fac6;
+  --main-bg-color:#e7e3f4;
   --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 html, body {
   box-sizing: border-box;
+  color: #312163;
 }
 
 /* css variable var(--main-bg-color) */
@@ -30,20 +31,20 @@ header {
 }
 
 .records-text {
-  padding-top: 2rem;
-  padding-bottom: 4rem;
-}
-
-.branches {
-  padding-bottom: 4rem;
-}
-
-.buy-sell-text {
+  padding-top: 1rem;
   padding-bottom: 2rem;
 }
 
+.branches {
+  padding-bottom: 3rem;
+}
+
+.buy-sell-text {
+  padding-bottom: 1rem;
+}
+
 .vinyl-etc-text {
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }
 
 #announcements {
