@@ -2,10 +2,12 @@
 // import Dropbox './node_modules/dropbox/dist/Dropbox-sdk.min.js'
 // import Dropbox from "https://unpkg.com/dropbox/dist/DropboxTeam-sdk.min.js"
 import axios from 'axios'
+import {Dropbox} from 'dropbox'
+import {config} from '../config.js'
+import style from './index.css'
 
 console.log('Hello World')
 
-// import {config} from './config.js'
 // import marked from './node_modules/marked/marked.min.js'
 
 // console.log(window.Dropbox.Dropbox)
