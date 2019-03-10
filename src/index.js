@@ -4,7 +4,7 @@
 import axios from 'axios'
 import {Dropbox} from 'dropbox'
 import {config} from '../config.js'
-import style from './index.css'
+import './index.css'
 
 console.log('Hello World')
 

@@ -9,11 +9,22 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(svg|css)$/,
+        test: /\.css$/,
         use: [
           {loader: 'style-loader'},
-          {loader: 'css-loader'}],
-          {loader: 'file-loader'}],
+          {loader: 'css-loader'},
+        ],
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]'
+            }
+          }
+        ]
       },
     ],
   },

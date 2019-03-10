@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --mode development --watch",
+    "dev": "webpack --mode development --watch && http-server --cors",
     "build": "webpack --mode production"
   },
   "repository": {
