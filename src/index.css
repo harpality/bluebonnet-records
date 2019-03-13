@@ -1,9 +1,11 @@
 :root {
-  --main-bg-color:#e7e3f4;
-  --main-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --main-bg-color: #e7e3f4;
+  --main-font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-html, body {
+html,
+body {
   box-sizing: border-box;
   color: #312163;
 }
@@ -11,39 +13,77 @@ html, body {
 /* css variable var(--main-bg-color) */
 
 main {
-  margin: 15px; /* Margins on all page content - Change if ya want */
-  background-color: var(--main-bg-color) ;
-
+  margin: 10px; /* Margins on all page content - Change if ya want */
+  background-color: var(--main-bg-color);
 }
 
-header {
+/* svg images */
+.blue-svg {
+  width: 500px;
+}
+
+.recs-svg {
+  width: 325px;
+}
+
+.branch-svg {
+  width: 450px;
+}
+
+.buy-sell-svg {
+  width: 400px;
+}
+
+.vinyl-svg {
+  width: 455px;
+}
+
+.bluebonnet-records-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* text-align: center; */
+  background-color: var(--main-bg-color);
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.bluebonnet-text {
+  margin-top: 2rem;
+}
+
+.records-text {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.branches-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
   background-color: var(--main-bg-color);
-
-}
-
-.bluebonnet-text {
-  padding-top: 2rem;
-}
-
-.records-text {
-  padding-top: 1rem;
-  padding-bottom: 2rem;
 }
 
 .branches {
-  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+}
+
+.buy-sell-vinyl-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--main-bg-color);
+  flex-wrap: wrap;
 }
 
 .buy-sell-text {
-  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .vinyl-etc-text {
-  padding-bottom: 3rem;
+  margin-left: 3rem;
 }
 
 #announcements {
@@ -54,7 +94,7 @@ header {
 }
 
 #announcement-text {
-  font-size: 3vw;
+  font-size: 1.25rem;
   padding: 3rem;
   font-family: var(--main-font);
 }
@@ -69,10 +109,9 @@ header {
 }
 
 .contact-text {
-  font-size: 3vw;
+  font-size: 1.5rem;
   font-family: var(--main-font);
   line-height: 1rem;
-
 }
 
 .contact-icons {
@@ -82,4 +121,55 @@ header {
   padding-bottom: 2rem;
   justify-content: space-evenly;
   flex: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    margin: 5px;
+  }
+  /* 
+  body {
+    width: 97vw;
+  } */
+
+  .vinyl-etc-text {
+    margin-left: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .records-text {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .blue-svg {
+    /* width: 400px; */
+    width: 90vw;
+  }
+
+  .recs-svg {
+    /* width: 225px; */
+    width: 70vw;
+  }
+
+  .branch-svg {
+    /* width: 350px; */
+    width: 80vw;
+  }
+
+  .buy-sell-svg {
+    /* width: 300px; */
+    width: 75vw;
+  }
+
+  .vinyl-svg {
+    /* width: 355px; */
+    width: 85vw;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+    font-family: var(--main-font);
+    line-height: 1rem;
+  }
 }
