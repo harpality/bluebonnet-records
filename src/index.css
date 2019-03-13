@@ -10,14 +10,13 @@ body {
   color: #312163;
 }
 
-/* css variable var(--main-bg-color) */
-
 main {
   margin: 10px; /* Margins on all page content - Change if ya want */
   background-color: var(--main-bg-color);
 }
 
 /* svg images */
+
 .blue-svg {
   width: 500px;
 }
@@ -42,7 +41,6 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* text-align: center; */
   background-color: var(--main-bg-color);
   margin-bottom: 3rem;
   flex-wrap: wrap;
@@ -127,10 +125,6 @@ main {
   main {
     margin: 5px;
   }
-  /* 
-  body {
-    width: 97vw;
-  } */
 
   .vinyl-etc-text {
     margin-left: 0;
@@ -143,27 +137,22 @@ main {
   }
 
   .blue-svg {
-    /* width: 400px; */
     width: 90vw;
   }
 
   .recs-svg {
-    /* width: 225px; */
     width: 70vw;
   }
 
   .branch-svg {
-    /* width: 350px; */
     width: 80vw;
   }
 
   .buy-sell-svg {
-    /* width: 300px; */
     width: 75vw;
   }
 
   .vinyl-svg {
-    /* width: 355px; */
     width: 85vw;
   }
 
