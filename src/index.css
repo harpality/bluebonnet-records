@@ -42,7 +42,7 @@ main {
   flex-direction: row;
   justify-content: center;
   background-color: var(--main-bg-color);
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   flex-wrap: wrap;
 }
 
@@ -65,6 +65,7 @@ main {
 
 .branches {
   margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .buy-sell-vinyl-container {
@@ -118,6 +119,7 @@ main {
   padding-top: 2rem;
   padding-bottom: 2rem;
   justify-content: space-evenly;
+  text-align: center;
   flex: wrap;
 }
 
