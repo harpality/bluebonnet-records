@@ -159,7 +159,7 @@ main {
   bottom: 5px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1024px) {
   main {
     margin: 5px;
   }
@@ -183,15 +183,15 @@ main {
   }
 
   .branch-svg {
-    width: 65vw;
+    width: 55vw;
   }
 
   .buy-sell-svg {
-    width: 75vw;
+    width: 70vw;
   }
 
   .vinyl-svg {
-    width: 85vw;
+    width: 80vw;
   }
 
   .fb-svg {
@@ -209,7 +209,7 @@ main {
   }
 
   .contact-text {
-    font-size: 1rem;
+    font-size: 4vw;
     font-family: var(--main-font);
     line-height: 1rem;
   }
