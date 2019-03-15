@@ -20,12 +20,10 @@ main {
 /* svg images */
 
 .blue-svg {
-  /* width: 500px; */
   width: 40vw;
 }
 
 .recs-svg {
-  /* width: 325px; */
   width: 26vw;
 }
 
@@ -34,13 +32,11 @@ main {
 }
 
 .buy-sell-svg {
-  /* width: 400px; */
   width: 25vw;
 }
 
 .vinyl-svg {
-  /* width: 455px; */
-  width: 28vw;
+  width: 29vw;
 }
 
 .bluebonnet-records-container {
@@ -110,7 +106,6 @@ main {
   background-color: var(--main-bg-color);
   justify-content: center;
   text-align: center;
-
 }
 
 .contact-text {
@@ -127,7 +122,6 @@ main {
   justify-content: space-evenly;
   text-align: center;
   flex: wrap;
-
 }
 
 .fb-svg {
@@ -136,12 +130,10 @@ main {
 
 .tw-svg {
   width: 4vw;
-
 }
 
 .ig-svg {
   width: 4vw;
-
 }
 
 .fb-icon:hover {
@@ -165,12 +157,10 @@ main {
   }
 
   .vinyl-etc-text {
-    margin-left: 0;
     margin-bottom: 1.5rem;
   }
 
   .records-text {
-    margin-left: 0;
     margin-top: 1rem;
   }
 
@@ -200,12 +190,10 @@ main {
 
   .tw-svg {
     width: 10vw;
-
   }
-  
+
   .ig-svg {
     width: 10vw;
-
   }
 
   .contact-text {
