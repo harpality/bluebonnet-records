@@ -12,7 +12,6 @@ body {
 }
 
 main {
-  /* margin: 10px; /1* Margins on all page content - Change if ya want *1/ */
   background-color: var(--main-bg-color);
 }
 
