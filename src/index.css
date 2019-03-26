@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
+
 :root {
   --main-bg-color: #e7e3f4;
-  --main-font: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  --main-font: 'Nunito', sans-serif;
+  font-weight: 600;
 }
 
 html,
@@ -14,7 +16,7 @@ body {
 main {
   margin: 5px; /* Margins on all page content - Change if ya want */
   background-color: var(--main-bg-color);
-  min-height: 100vh;
+  height: 100vh;
 }
 
 /* svg images */
@@ -92,12 +94,14 @@ main {
   flex-direction: column;
   background-color: #fff;
   align-items: center;
+  overflow: auto;
 }
 
 #announcement-text {
   font-size: 1.25vw;
-  padding: 3rem;
   font-family: var(--main-font);
+  font-weight: 900;
+  overflow: auto;
 }
 
 .contact-info {
@@ -117,11 +121,12 @@ main {
 .contact-icons {
   background-color: var(--main-bg-color);
   display: flex;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 5vh;
+  /* padding-bottom: 2vh; */
   justify-content: space-evenly;
   text-align: center;
   flex: wrap;
+  align-items: center;
 }
 
 .fb-svg {
@@ -204,7 +209,10 @@ main {
 
   #announcement-text {
     font-size: 1rem;
-    padding: 3rem;
     font-family: var(--main-font);
+  }
+
+  .contact-icons {
+    padding-top: 3vh;
   }
 }
