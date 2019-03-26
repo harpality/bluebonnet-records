@@ -14,7 +14,6 @@ body {
 }
 
 main {
-  margin: 5px; /* Margins on all page content - Change if ya want */
   background-color: var(--main-bg-color);
   height: 100vh;
 }
