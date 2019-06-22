@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
 
 :root {
-  /*--main-bg-color: #e7e3f4;*/
-  /*--main-bg-color: #f0ece7;*/
+  --main-purp-color: #312163;
   --main-bg-color: #fbfaf9;
   --mid-banner-color: #d1d1d1;
   --light-txt-color: #605e5c;
@@ -29,7 +28,6 @@ main {
 }
 
 .container {
-  /* flex: 1; */
   display: flex;
   flex-direction: column;
 }
@@ -37,6 +35,17 @@ main {
 .grit {
   mask-image: url("../dist/assets/grit.png");
   -webkit-mask-image: url("../dist/assets/grit.png");
+}
+
+/* general elements */
+a {
+  color: var(--link-txt-color);
+}
+a:hover {
+  color: var(--main-purp-color);
+}
+.text-decoration-none {
+  text-decoration: none;
 }
 
 /* svg images */
@@ -147,7 +156,8 @@ main {
 .contact-text {
   font-size: 1.5vw;
   font-family: var(--main-font);
-  line-height: 1rem;
+  line-height: 1.5vw;
+  /* padding-bottom: 6px; */
 }
 
 .contact-icons {
