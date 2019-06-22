@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600');
 
 :root {
-  --main-bg-color: #e7e3f4;
+  /*--main-bg-color: #e7e3f4;*/
+  /*--main-bg-color: #f0ece7;*/
+  --main-bg-color: #fbfaf9;
+  --mid-banner-color: #d1d1d1;
+  --light-txt-color: #605e5c;
   --main-font: 'Nunito', sans-serif;
   font-weight: 600;
 }
@@ -9,7 +13,8 @@
 html,
 body {
   box-sizing: border-box;
-  color: #312163;
+  /*color: #312163;*/
+  color: var(--light-txt-color);
   margin: 0 auto;
 }
 
@@ -100,9 +105,9 @@ main {
 }
 
 #announcements {
+  background-color: var(--mid-banner-color);
   display: flex;
   flex-direction: column;
-  background-color: #fff;
   align-items: center;
   min-height: 12vh;
   overflow: auto;
@@ -140,16 +145,9 @@ main {
   flex: 1;
 }
 
-.fb-svg {
+.fb-svg, .tw-svg, .ig-svg {
   width: 4vw;
-}
-
-.tw-svg {
-  width: 4vw;
-}
-
-.ig-svg {
-  width: 4vw;
+  max-width: 50px;
 }
 
 .fb-icon:hover {

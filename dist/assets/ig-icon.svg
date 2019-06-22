@@ -3,7 +3,8 @@
 	 viewBox="0 0 60 60" style="enable-background:new 0 0 60 60;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:none;}
-	.st1{fill:#312163;}
+	<!-- .st1{fill:#312163;} -->
+	.st1{fill:#605e5c;}
 </style>
 <g>
 	<path class="st1" d="M60,50.1V9.9c0-4.9-3.6-9-8.3-9.8H8.3C3.6,0.9,0,5,0,9.9v40.1c0,4.9,3.6,9,8.3,9.8h43.3
