@@ -51,6 +51,8 @@ main {
 
 .branch-svg {
   width: 20vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 
 .buy-sell-svg {
@@ -90,6 +92,15 @@ main {
 .branches {
   margin-bottom: 3rem;
   margin-top: 2rem;
+}
+
+.shop-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--main-font);
+  font-size: 1.5vw;
 }
 
 .buy-sell-vinyl-container {
@@ -150,7 +161,9 @@ main {
   flex: 1;
 }
 
-.fb-svg, .tw-svg, .ig-svg {
+.fb-svg,
+.tw-svg,
+.ig-svg {
   width: 4vw;
   max-width: 50px;
 }
@@ -193,6 +206,8 @@ main {
 
   .branch-svg {
     width: 55vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
   }
 
   .buy-sell-svg {
@@ -234,6 +249,12 @@ main {
     padding-top: 3vh;
     padding-bottom: 3vh;
   }
+
+  .shop-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 4vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -251,5 +272,11 @@ main {
     font-size: 5vw;
     font-family: var(--main-font);
     line-height: 1vh;
+  }
+
+  .shop-links {
+    display: flex;
+    flex-direction: column;
+    font-size: 5vw;
   }
 }
