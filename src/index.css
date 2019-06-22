@@ -33,6 +33,11 @@ main {
   display: flex;
   flex-direction: column;
 }
+/* texture */
+.grit {
+  mask-image: url("../dist/assets/grit.png");
+  -webkit-mask-image: url("../dist/assets/grit.png");
+}
 
 /* svg images */
 
