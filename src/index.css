@@ -19,29 +19,21 @@ body {
 
 main {
   background-color: var(--main-bg-color);
-}
-
-main > section {
-  background-color: pink;
-}
-main > header {
-  background-color: pink;
-}
-
-.wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-size: 24px;
+  font-family: var(--main-font);
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
+header {
+  margin-top: 1rem;
 }
+
 /* texture */
 .grit {
-  mask-image: url("../dist/assets/grit.png");
-  -webkit-mask-image: url("../dist/assets/grit.png");
+  mask-image: url('../dist/assets/grit.png');
+  -webkit-mask-image: url('../dist/assets/grit.png');
 }
 
 /* general elements */
@@ -51,6 +43,8 @@ a {
 a:hover {
   color: var(--main-purp-color);
 }
+
+/* general-purpose-css */
 .text-decoration-none {
   text-decoration: none;
 }
@@ -67,8 +61,8 @@ a:hover {
 
 .branch-svg {
   width: 20vw;
-  padding-left: 2vw;
-  padding-right: 2vw;
+  /* padding-left: 2vw; */
+  /* padding-right: 2vw; */
 }
 
 .buy-sell-svg {
@@ -87,47 +81,29 @@ a:hover {
   flex-wrap: wrap;
 }
 
-.bluebonnet-text {
-  margin-top: 2rem;
-}
-
 .records-text {
   margin-left: 2vw;
-  margin-top: 2rem;
 }
 
 .branches-container {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
 }
 
-.branches {
-  margin-bottom: 3rem;
-  margin-top: 2rem;
-}
-
-.shop-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: var(--main-font);
-  font-size: 1.5vw;
-}
-
 .buy-sell-vinyl-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  flex-wrap: wrap;
 }
 
-.buy-sell-text {
-  margin-bottom: 1rem;
-}
+/* .buy-sell-text { */
+/*   margin-bottom: 1rem; */
+/* } */
 
 .vinyl-etc-text {
   margin-left: 2vw;
@@ -143,12 +119,6 @@ a:hover {
   justify-content: center;
 }
 
-#announcement-text {
-  font-size: 1.25vw;
-  font-family: var(--main-font);
-  overflow: auto;
-}
-
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -157,138 +127,140 @@ a:hover {
 }
 
 .contact-text {
-  font-size: 1.5vw;
   font-family: var(--main-font);
-  line-height: 1.5vw;
-  /* padding-bottom: 6px; */
+  line-height: 1rem;
+  /* padding: 1rem; */
 }
 
 .contact-icons {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  padding-top: 5vh;
-  align-items: center;
   justify-content: space-evenly;
-  padding-bottom: 3vh;
-  flex: 1;
+  height:100%; 
+  /* padding-top: 5vh; */
+  /* padding-bottom: 3vh; */
 }
 
-.fb-svg,
-.tw-svg,
-.ig-svg {
+.shop-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font);
+}
+
+.hours {
+  line-height: 0.33rem;
+  /* padding-left: 2rem; */
+}
+
+.icon {
   width: 4vw;
   max-width: 50px;
+  mask-image: url('../dist/assets/grit.png');
+  -webkit-mask-image: url('../dist/assets/grit.png');
 }
 
-.fb-icon:hover {
-  position: relative;
-  bottom: 5px;
+
+.icon:hover {
+  filter: hue-rotate(230deg) saturate(47.5) brightness(50%); /*changes svg color on hover */
+  mask-image: none;
+  -webkit-mask-image: none;
 }
 
-.ig-icon:hover {
-  position: relative;
-  bottom: 5px;
+@media screen and (min-width: 600px) {
+
 }
+/* @media screen and (max-width: 1024px) { */
+/*   .wrapper { */
+/*     margin: 5px; */
+/*   } */
 
-.tw-icon:hover {
-  position: relative;
-  bottom: 5px;
-}
+/*   .vinyl-etc-text { */
+/*     margin-bottom: 1.5vh; */
+/*   } */
 
-@media screen and (max-width: 1024px) {
-  .wrapper {
-    margin: 5px;
-  }
+/*   .records-text { */
+/*     margin-top: 1vh; */
+/*   } */
 
-  .vinyl-etc-text {
-    margin-bottom: 1.5vh;
-  }
+/*   .blue-svg { */
+/*     width: 95vw; */
+/*   } */
 
-  .records-text {
-    margin-top: 1vh;
-  }
+/*   .recs-svg { */
+/*     width: 70vw; */
+/*   } */
 
-  .blue-svg {
-    width: 95vw;
-  }
+/*   .branch-svg { */
+/*     width: 55vw; */
+/*     margin-top: 2vh; */
+/*     margin-bottom: 2vh; */
+/*   } */
 
-  .recs-svg {
-    width: 70vw;
-  }
+/*   .buy-sell-svg { */
+/*     width: 70vw; */
+/*   } */
 
-  .branch-svg {
-    width: 55vw;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-  }
+/*   .vinyl-svg { */
+/*     width: 80vw; */
+/*   } */
 
-  .buy-sell-svg {
-    width: 70vw;
-  }
+/*   .fb-svg { */
+/*     width: 12vw; */
+/*   } */
 
-  .vinyl-svg {
-    width: 80vw;
-  }
+/*   .tw-svg { */
+/*     width: 12vw; */
+/*   } */
 
-  .fb-svg {
-    width: 12vw;
-  }
+/*   .ig-svg { */
+/*     width: 12vw; */
+/*   } */
 
-  .tw-svg {
-    width: 12vw;
-  }
+/*   .contact-text { */
+/*     font-family: var(--main-font); */
+/*     line-height: 1rem; */
+/*     padding: 1rem; */
+/*   } */
 
-  .ig-svg {
-    width: 12vw;
-  }
+/*   #announcements { */
+/*     justify-content: center; */
+/*   } */
 
-  .contact-text {
-    font-size: 4vw;
-    font-family: var(--main-font);
-    line-height: 1rem;
-  }
+/*   #announcement-text { */
+/*     font-family: var(--main-font); */
+/*   } */
 
-  #announcements {
-    justify-content: center;
-  }
+/*   .contact-icons { */
+/*     padding-top: 3vh; */
+/*     padding-bottom: 3vh; */
+/*   } */
 
-  #announcement-text {
-    font-size: 2rem;
-    font-family: var(--main-font);
-  }
+/*   .shop-info { */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*   } */
+/*   .hours { */
+/*     padding-left: 0; */
+/*   } */
+/* } */
 
-  .contact-icons {
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-  }
+/* @media screen and (max-width: 600px) { */
+/*   #announcement-text { */
+/*     /1* font-size: 1rem; *1/ */
+/*   } */
 
-  .shop-links {
-    display: flex;
-    flex-direction: column;
-    font-size: 4vw;
-  }
-}
+/*   #announcements { */
+/*     justify-content: center; */
+/*     align-items: center; */
+/*     min-height: 10vh; */
+/*   } */
 
-@media screen and (max-width: 600px) {
-  #announcement-text {
-    font-size: 1rem;
-  }
+/*   .contact-text { */
+/*     /1* font-size: 5vw; *1/ */
+/*     font-family: var(--main-font); */
+/*     line-height: 1vh; */
+/*   } */
 
-  #announcements {
-    justify-content: center;
-    align-items: center;
-    min-height: 10vh;
-  }
-
-  .contact-text {
-    font-size: 5vw;
-    font-family: var(--main-font);
-    line-height: 1vh;
-  }
-
-  .shop-links {
-    display: flex;
-    flex-direction: column;
-    font-size: 5vw;
-  }
-}
+/* } */
