@@ -21,6 +21,13 @@ main {
   background-color: var(--main-bg-color);
 }
 
+main > section {
+  background-color: pink;
+}
+main > header {
+  background-color: pink;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -76,7 +83,6 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  background-color: var(--main-bg-color);
   margin-bottom: 1rem;
   flex-wrap: wrap;
 }
@@ -95,7 +101,6 @@ a:hover {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  background-color: var(--main-bg-color);
 }
 
 .branches {
@@ -117,7 +122,6 @@ a:hover {
   flex-direction: row;
   justify-content: center;
   text-align: center;
-  background-color: var(--main-bg-color);
   flex-wrap: wrap;
 }
 
@@ -148,7 +152,6 @@ a:hover {
 .contact-info {
   display: flex;
   flex-direction: column;
-  background-color: var(--main-bg-color);
   justify-content: center;
   text-align: center;
 }
@@ -161,7 +164,6 @@ a:hover {
 }
 
 .contact-icons {
-  background-color: var(--main-bg-color);
   display: flex;
   flex-direction: row;
   padding-top: 5vh;
