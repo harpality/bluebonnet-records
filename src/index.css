@@ -71,6 +71,10 @@ p {
 .grid-row-span-3 {
   grid-row: span 3;
 }
+.max-height-200px {
+  height: 20vh;
+  max-height: 400px;
+}
 .text-align-center {
   text-align: center;
 }
