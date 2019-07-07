@@ -68,6 +68,9 @@ p {
 .grid-row-span-3 {
   grid-row: span 3;
 }
+.min-width-33-percent {
+  min-width: 33%;
+}
 .position-absolute {
   position: absolute;
   top: 0;
@@ -94,6 +97,9 @@ p {
 }
 .vertical-align-bottom {
   vertical-align: bottom;
+}
+.vertical-align-top {
+  vertical-align: top;
 }
 
 /* title and header images */
@@ -125,6 +131,17 @@ p {
 #record-svg:hover > #record-inner-svg {
   filter: brightness(0) saturate(100%) invert(38%) sepia(0%) saturate(2444%) hue-rotate(31deg) brightness(95%) contrast(91%);
 }
+#tshirt-outer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#tshirt-container {
+  top:0;
+  right:0;
+  left:0;
+}
 #tshirt-text {
   color: var(--light-brown);
   top: 36px;
@@ -151,6 +168,9 @@ p {
   justify-content: space-evenly;
   /*margin-left: -1.5rem; /*offset div to make branches appear centered */
   text-align: center;
+}
+
+.branches-container > * {
 }
 
 .buy-sell-vinyl-container {
@@ -247,7 +267,6 @@ p {
   .branches-container {
     align-items: center;
     justify-content: space-evenly;
-    margin-left: 0; /*offset div to make branches appear centered */
   }
 
   .contact-info {
@@ -309,9 +328,6 @@ p {
   }
   .branch-svg {
     width: 150px;
-  }
-  .branches-container {
-    margin-left: 0; /* undo offset from above */
   }
 .hours {
   display: grid;

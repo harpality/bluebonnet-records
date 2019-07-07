@@ -74,19 +74,30 @@
 
       <section class="branches-container">
         <!-- Buy-records text -->
-        <a href="https://www.discogs.com/seller/bluebonnetrecordstx/profile" target="_blank">
-          <div class="position-relative display-none-mobile" id="record-svg">
-            <img class="branches-container-features position-absolute" id="record-outer-svg" src="assets/record_outside.svg" alt="record" />
-            <img class="branches-container-features position-absolute" id="record-inner-svg" src="assets/record_inside.svg" alt="record" />
-          </div>
-          <span class="display-none-desktop">Buy<br>Records</span>
-        </a>
-        <img class="branch-svg" src="assets/branches.svg" alt="branches" />
-        <a class="position-relative" href="https://bluebonnet-records.square.site/" target="_blank">
-          <img class="branches-container-features display-none-mobile" id="tshirt-svg" src="assets/tshirt.svg" alt="tshirt" />
-          <span id="tshirt-text" class="display-none-mobile position-absolute">Buy<br>Merch</span>
-          <span class="display-none-desktop">Buy<br>Merch</span>
-        </a>
+        <div class="min-width-33-percent">
+          <a aria-label="link to discogs" href="https://www.discogs.com/seller/bluebonnetrecordstx/profile" target="_blank">
+            <div class="position-relative display-none-mobile" id="record-svg">
+              <img class="branches-container-features position-absolute" id="record-outer-svg" src="assets/record_outside.svg" alt="record" />
+              <img class="branches-container-features position-absolute" id="record-inner-svg" src="assets/record_inside.svg" alt="record" />
+            </div>
+            <span class="display-none-desktop">Buy<br>Records</span>
+          </a>
+        </div>
+        <div class="min-width-33-percent">
+          <img class="branch-svg" src="assets/branches.svg" alt="branches" />
+        </div>
+        <div id="tshirt-outer" class="min-width-33-percent">
+          <a 
+          aria-label="link to merchandise"
+          id="tshirt-container"
+          class="position-relative"
+          href="https://bluebonnet-records.square.site/" target="_blank">
+            <img class="branches-container-features display-none-mobile" id="tshirt-svg" src="assets/tshirt.svg" alt="tshirt" />
+            <span id="tshirt-text" class="display-none-mobile position-absolute">Buy<br>Merch</span>
+            <span class="display-none-desktop">Buy<br>Merch</span>
+          </a>
+        </div>
+        
       </section>
 
     <!-- ANNOUNCEMENTS -->
@@ -101,17 +112,23 @@
 
       <section class="contact-icons">
         <div class="icon">
-          <a href="https://www.facebook.com/bluebonnetrecordstx"
+          <a 
+          aria-label="facebook"
+          href="https://www.facebook.com/bluebonnetrecordstx"
             ><img class="fb-svg vertical-align-bottom" src="assets/fb-icon.svg" alt="fb-icon"
           /></a>
         </div>
         <div class="icon">
-          <a href="https://www.instagram.com/bluebonnetrecords/"
+          <a
+           aria-label="link to instagram"
+           href="https://www.instagram.com/bluebonnetrecords/"
             ><img class="ig-svg vertical-align-bottom" src="assets/ig-icon.svg" alt="ig-icon"
           /></a>
         </div>
         <div class="icon">
-          <a href="https://twitter.com/tinyrecordstore"
+          <a 
+          arai-label="link to twitter"
+          href="https://twitter.com/tinyrecordstore"
             ><img class="tw-svg vertical-align-bottom" src="assets/tw-icon.svg" alt="tw-icon"
           /></a>
         </div>
