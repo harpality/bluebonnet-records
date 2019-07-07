@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 177.7 195.8" style="enable-background:new 0 0 177.7 195.8;" xml:space="preserve"> -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 177.7 195.8" style="enable-background:new 0 0 177.7 195.8;" xml:space="preserve">
+<style type="text/css">
+  .st0{fill:#B53131;}
+  .st1{fill:none;}
+  .dark-grey{fill:#605e5c;}
+  .light-brown{fill:#b7a196;}
+</style>
+<g>
+	<path id="vinyl" class="dark-grey" d="M88.9,44.1c-29,0-52.5,23.4-52.5,52.3s23.5,52.3,52.5,52.3s52.5-23.4,52.5-52.3S117.9,44.1,88.9,44.1z
+		 M88.9,97.8c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5c0.8,0,1.5,0.7,1.5,1.5S89.7,97.8,88.9,97.8z"/>
+	<!-- <path id="label" class="light-brown" d="M88.9,78.3c-10,0-18.1,8.1-18.1,18.1s8.1,18.1,18.1,18.1s18.1-8.1,18.1-18.1S98.8,78.3,88.9,78.3z
+		 M88.9,97.8c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5c0.8,0,1.5,0.7,1.5,1.5S89.7,97.8,88.9,97.8z"/> -->
+</g>
+<path id="SVGID_x5F_1_x5F_" class="st1" d="M157.5,97.9c0,38.2-30.7,69.2-68.6,69.2s-68.6-31-68.6-69.2S51,28.6,88.9,28.6
+	S157.5,59.6,157.5,97.9z"/>
+<text>
+  <textPath  xlink:href="#SVGID_x5F_1_x5F_" startOffset="59%">
+    <tspan class="dark-grey grit" style="font-family:'Nunito',sans-serif; font-size:36px;">
+	  Buy
+	</tspan>
+  </textPath>
+</text>
+<path id="SVGID_x5F_2_x5F_" class="st1" d="M182,97.9c0-51.9-41.7-94-93.1-94S-4.2,46-4.2,97.9s41.7,94,93.1,94S182,149.8,182,97.9z"/>
+<text>
+  <textPath  xlink:href="#SVGID_x5F_2_x5F_" startOffset="68%">
+    <tspan class="dark-grey" style="font-family:'Nunito',sans-serif; font-size:36px; letter-spacing:5px;">
+	  Records
+	</tspan>
+  </textPath>
+</text>
+</svg>

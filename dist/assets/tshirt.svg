@@ -6,7 +6,10 @@
 	.st0{fill:none;}
 	.st1{fill:#FFFFFF;}
 	.st2{font-family:'Nunito', sans-serif;}
-	.st3{font-size:105px;}
+	.st3{
+	  font-size:155px;
+	  font-weight:normal;
+	}
   .text-color{fill:#605e5c;}
   .light-grey{color:#d1d1d1;}
 </style>
@@ -15,5 +18,8 @@
 	C377.6,15.2,359.9,6.8,348,0c-62.3,18.4-124.6,36.7-186.9,55.1L0,224c36.9,41.5,73.8,83,110.8,124.5c18.4-4.6,36.8-9.1,55.3-13.7
 	l1.2,499.7c0-0.3,0-0.7,0-1C251.8,835.5,336.4,837.5,421,839.5z"/>
 <rect x="276.1" y="220.6" class="st0" width="341.2" height="220.2"/>
-<text transform="matrix(1 0 0 1 353.9785 300.4295)"><tspan x="0" y="0" class="st1 st2 st3">Buy</tspan><tspan x="-62.8" y="126" class="st1 st2 st3">Merch</tspan></text>
+<!-- <text transform="matrix(1 0 0 1 353.9785 300.4295)"> -->
+<!-- <text transform="matrix(1 0 0 1 300.9785 320.4295)">
+  <tspan x="0" y="0" class="st1 st2 st3">Buy</tspan>
+  <tspan x="-62.8" y="166" class="st1 st2 st3">Merch</tspan></text> -->
 </svg>
