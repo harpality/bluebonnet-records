@@ -53,6 +53,9 @@ p {
 .background-color-violet {
   background-color: violet;
 }
+.display-inline-block {
+  display: inline-block;
+}
 .display-none-mobile {
   display: initial;
 }
@@ -137,24 +140,20 @@ p {
   align-items: center;
   justify-content: center;
 }
-#tshirt-container {
-  top: 0;
-  right: 0;
-  left: 0;
-}
 #tshirt-text {
   color: var(--light-brown);
-  /* top: 36px;
-  left: 51px; */
-  transform: translateX(-40%);
-  left: 40%;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 25%;
 }
+
 #tshirt-svg:hover {
   filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg)
     brightness(91%) contrast(95%);
 }
-#tshirt-svg:hover + #tshirt-text {
-  color: var(--light-txt-color);
+#tshirt-container:hover + #tshirt-text-anchor {
+  /* color: var(--light-txt-color); */
+  color: pink;
 }
 .buy-sell-text {
   width: 44%;
