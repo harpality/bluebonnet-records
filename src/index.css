@@ -123,7 +123,7 @@ p {
 }
 
 .branch-svg {
-  width: 33%;
+  width: 45%;
   max-width: 225px;
 }
 #record-svg:hover > #record-outer-svg {
@@ -146,6 +146,7 @@ p {
   left: 50%;
   top: 25%;
 }
+
 #tshirt-svg:hover {
   filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg)
     brightness(91%) contrast(95%);
@@ -170,9 +171,6 @@ p {
   text-align: center;
 }
 
-.branches-container > * {
-}
-
 .buy-sell-vinyl-container {
   display: flex;
   flex-direction: row;
@@ -180,11 +178,13 @@ p {
   justify-content: space-between;
   text-align: left;
   width: var(--max-width);
-  margin: 0 auto;
+  margin: 0 auto .5rem auto;
 }
 
 #announcements {
-  background-color: var(--light-brown);
+  /* background-color: var(--light-brown); */
+  background-color: var(--main-purp-color);
+  color: var(--light-brown);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -269,29 +269,9 @@ p {
     align-items: center;
     justify-content: space-evenly;
   }
-
   .contact-info {
     width: calc(100% - 2rem);
   }
-  /*
-  .address {
-    width: 100%;
-    justify-content: left;
-    margin-bottom: 1rem;
-  }
-  #address-headers {
-    max-width: 50%;
-  }
-  .hours {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: left;
-    margin-left: 0;
-    width: 100%;
-  }
-  .hours {
-    padding-left: 0;
-  } */
   .contact-icons {
     justify-content: space-between;
     width: calc(100% - 2rem);
@@ -331,7 +311,6 @@ p {
   .branch-svg {
     width: 150px;
   }
-  >
   .hours {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -347,6 +326,12 @@ p {
   }
   .icon {
     width: 40px;
+  }
+  #tshirt-text {
+    color: var(--light-txt-color);
+  }
+  #tshirt-text:hover {
+    color: var(--light-brown);
   }
 }
 
