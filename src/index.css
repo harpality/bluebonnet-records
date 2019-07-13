@@ -146,14 +146,12 @@ p {
   left: 50%;
   top: 25%;
 }
-
 #tshirt-svg:hover {
   filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg)
     brightness(91%) contrast(95%);
 }
-#tshirt-container:hover + #tshirt-text-anchor {
-  /* color: var(--light-txt-color); */
-  color: pink;
+#tshirt-container:hover + #tshirt-text {
+  color: var(--light-txt-color);
 }
 .buy-sell-text {
   width: 44%;
@@ -333,7 +331,7 @@ p {
   .branch-svg {
     width: 150px;
   }
-
+  >
   .hours {
     display: grid;
     grid-template-columns: 1fr auto;
