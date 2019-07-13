@@ -180,7 +180,7 @@ p {
   justify-content: space-between;
   text-align: left;
   width: var(--max-width);
-  margin: 0 auto;
+  margin: 0 auto .5rem auto;
 }
 
 #announcements {
