@@ -73,8 +73,6 @@ p {
 }
 .position-absolute {
   position: absolute;
-  top: 0;
-  left: 0;
 }
 .position-relative {
   position: relative;
@@ -146,8 +144,8 @@ p {
   color: var(--light-brown);
   /* top: 36px;
   left: 51px; */
-  top: 0px;
-  left: 0px;
+  transform: translateX(-40%);
+  left: 40%;
 }
 #tshirt-svg:hover {
   filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg) brightness(91%) contrast(95%);
