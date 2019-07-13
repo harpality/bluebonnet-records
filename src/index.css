@@ -124,10 +124,12 @@ p {
   max-width: 225px;
 }
 #record-svg:hover > #record-outer-svg {
-  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg) brightness(91%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg)
+    brightness(91%) contrast(95%);
 }
 #record-svg:hover > #record-inner-svg {
-  filter: brightness(0) saturate(100%) invert(38%) sepia(0%) saturate(2444%) hue-rotate(31deg) brightness(95%) contrast(91%);
+  filter: brightness(0) saturate(100%) invert(38%) sepia(0%) saturate(2444%) hue-rotate(31deg)
+    brightness(95%) contrast(91%);
 }
 #tshirt-outer {
   display: flex;
@@ -136,9 +138,9 @@ p {
   justify-content: center;
 }
 #tshirt-container {
-  top:0;
-  right:0;
-  left:0;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 #tshirt-text {
   color: var(--light-brown);
@@ -148,10 +150,11 @@ p {
   left: 40%;
 }
 #tshirt-svg:hover {
-  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg) brightness(91%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg)
+    brightness(91%) contrast(95%);
 }
 #tshirt-svg:hover + #tshirt-text {
-  color: var(--light-txt-color); 
+  color: var(--light-txt-color);
 }
 .buy-sell-text {
   width: 44%;
@@ -206,8 +209,8 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  max-width: calc(50% - .5rem);
-  margin-right: .5rem;
+  max-width: calc(80% - 0.5rem);
+  margin-right: 0.5rem;
 }
 #address-headers {
   padding-right: 1rem;
@@ -232,7 +235,8 @@ p {
   vertical-align: bottom;
 }
 .icon:hover {
-  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg) brightness(91%) contrast(95%);
+  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg)
+    brightness(91%) contrast(95%);
   /* filter: hue-rotate(230deg) saturate(47.5) brightness(40%); changes svg color on hover */
 }
 
@@ -259,7 +263,7 @@ p {
   }
   .buy-sell-vinyl-container {
     width: calc(100% - 2rem);
-    margin-bottom: -.3rem; /* compensate for extra space in img */
+    margin-bottom: -0.3rem; /* compensate for extra space in img */
   }
   .branch-svg {
     width: 33%;
@@ -318,9 +322,10 @@ p {
   }
 
   .address {
-    display: block;
+    /* display: block; */
     margin: 1rem 0;
     text-align: center;
+    justify-content: center;
     width: 100%;
   }
   #address-headers {
@@ -329,21 +334,20 @@ p {
   .branch-svg {
     width: 150px;
   }
-.hours {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  margin-left: 0;
-  width: 72%;
-  margin: 0 auto;
-}
+  .hours {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-left: 0;
+    width: 72%;
+    margin: 0 auto;
+  }
 
-#announcements {
-  justify-content: center;
-  align-items: center;
-  min-height: 72px;
-}
+  #announcements {
+    justify-content: center;
+    align-items: center;
+    min-height: 72px;
+  }
   .icon {
     width: 40px;
   }
-
 }
