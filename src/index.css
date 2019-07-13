@@ -144,8 +144,10 @@ p {
 }
 #tshirt-text {
   color: var(--light-brown);
-  top: 30%; /*36px;*/
-  left: 29% /*51px;*/
+  /* top: 36px;
+  left: 51px; */
+  top: 0px;
+  left: 0px;
 }
 #tshirt-svg:hover {
   filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg) brightness(91%) contrast(95%);
@@ -180,7 +182,7 @@ p {
   justify-content: space-between;
   text-align: left;
   width: var(--max-width);
-  margin: 0 auto .5rem auto;
+  margin: 0 auto;
 }
 
 #announcements {
