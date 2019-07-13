@@ -178,7 +178,7 @@ p {
   justify-content: space-between;
   text-align: left;
   width: var(--max-width);
-  margin: 0 auto .5rem auto;
+  margin: 0 auto 0.5rem auto;
 }
 
 #announcements {
@@ -260,7 +260,7 @@ p {
   }
   .buy-sell-vinyl-container {
     width: calc(100% - 2rem);
-    margin-bottom: -0.3rem; /* compensate for extra space in img */
+    margin-bottom: 0.33rem; /* compensate for extra space in img */
   }
   .branch-svg {
     width: 33%;
@@ -311,6 +311,18 @@ p {
   .branch-svg {
     width: 150px;
   }
+  .buy-sell-vinyl-container {
+    justify-content: center;
+  }
+  .buy-sell-text {
+    width: 95%;
+    margin-bottom: 0.33rem;
+  }
+
+  .vinyl-etc-text {
+    width: 100%;
+  }
+
   .hours {
     display: grid;
     grid-template-columns: 1fr auto;
