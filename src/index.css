@@ -333,6 +333,7 @@ p {
   .branch-svg {
     width: 150px;
   }
+
   .hours {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -348,5 +349,20 @@ p {
   }
   .icon {
     width: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #discogs {
+    order: 1;
+  }
+
+  #branches {
+    margin-top: 1.5rem;
+    order: 2;
+  }
+
+  #tshirt-outer {
+    order: 1;
   }
 }
