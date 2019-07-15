@@ -288,6 +288,7 @@ p {
   }
   .display-none-desktop {
     display: initial;
+    font-weight: bold;
   }
   .contact-info {
     align-items: center;
@@ -311,6 +312,11 @@ p {
   }
   .branch-svg {
     width: 150px;
+  }
+
+  .branches-container {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
   .buy-sell-vinyl-container {
     justify-content: center;
