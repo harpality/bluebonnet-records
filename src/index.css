@@ -84,6 +84,7 @@ p {
   height: 20vh;
   max-height: 300px;
   min-height: 150px;
+  width: 200px;
   top: -90px;
   left: -100px;
 }
