@@ -1,11 +1,11 @@
-#Bluebonnet Records
+# Bluebonnet Records
 
 Basic code for Bluebonnet Records landing page.
 
-##Development Notes
+## Development Notes
 
-Project uses Webpack for module bundling and minification. Run ```npm run dev``` to initiate.
+Project uses Webpack for module bundling and minification. Run `npm run dev` to initiate.
 
-##Additional
+## Additional
 
 Updates/Announcements are pulled from a markdown file in Dropbox.
