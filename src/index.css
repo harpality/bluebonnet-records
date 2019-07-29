@@ -2,9 +2,13 @@
 
 :root {
   --main-purp-color: #312163;
-  --main-bg-color: #fbfaf9;
-  --light-brown: #b7a196;
-  --light-txt-color: #605e5c;
+  /* --main-bg-color: #fbfaf9; */
+  --main-bg-color: white;
+  /* --main-accent-color: #b7a196; */
+  /* --main-accent-color: #d16666; */
+  --main-accent-color: #db3a34;
+  /* --main-txt-color: #605e5c; */
+  --main-txt-color: #42403f;
   --main-font: 'Nunito', sans-serif;
   --max-width: 90vw;
   font-weight: 600;
@@ -16,14 +20,14 @@ a {
 }
 a:hover {
   /* color: var(--main-purp-color); */
-  color: var(--light-brown);
+  color: var(--main-accent-color);
 }
 
 html,
 body {
   background-color: var(--main-bg-color);
   box-sizing: border-box;
-  color: var(--light-txt-color);
+  color: var(--main-txt-color);
   margin: 0;
 }
 
@@ -31,9 +35,8 @@ main {
   display: flex;
   flex-direction: column;
   font-size: 28px;
-  /* font-size: 24px; */
   font-family: var(--main-font);
-  min-height: calc(100vh - 2rem);
+  min-height: calc(100vh - 1rem);
   justify-content: space-between;
   margin-top: 1rem;
   max-width: 100vw;
@@ -128,12 +131,12 @@ p {
   max-width: 225px;
 }
 #record-svg:hover > #record-outer-svg {
-  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg)
-    brightness(91%) contrast(95%);
+  filter: brightness(0) invert(28%) sepia(95%) saturate(1473%) hue-rotate(339deg) brightness(91%) contrast(93%);
+
+ 
 }
 #record-svg:hover > #record-inner-svg {
-  filter: brightness(0) saturate(100%) invert(38%) sepia(0%) saturate(2444%) hue-rotate(31deg)
-    brightness(95%) contrast(91%);
+  filter: brightness(0) invert(24%) sepia(1%) saturate(2329%) hue-rotate(339deg) brightness(88%) contrast(85%);
 }
 #tshirt-outer {
   display: flex;
@@ -142,18 +145,15 @@ p {
   justify-content: center;
 }
 #tshirt-text {
-  color: var(--light-brown);
+  color: white;/*(var(--main-accent-color);*/
   transform: translateX(-50%);
+  text-decoration: none;
   left: 50%;
   top: 25%;
 }
 
 #tshirt-svg:hover {
-  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg)
-    brightness(91%) contrast(95%);
-}
-#tshirt-container:hover + #tshirt-text {
-  color: var(--light-txt-color);
+  filter: brightness(0) invert(28%) sepia(95%) saturate(1473%) hue-rotate(339deg) brightness(91%) contrast(93%);
 }
 .buy-sell-text {
   width: 44%;
@@ -183,9 +183,10 @@ p {
 }
 
 #announcements {
-  /* background-color: var(--light-brown); */
+  /* background-color: var(--main-accent-color); */
   background-color: var(--main-purp-color);
-  color: var(--light-brown);
+  /* color: var(--main-accent-color); */
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -220,12 +221,15 @@ p {
 #hours-header {
   padding-right: 1rem;
 }
+#footer-div {
+  background-color: var(--main-accent-color);
+}
 .contact-icons {
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 1rem auto 0 auto;
+  margin: 1rem auto;
   width: var(--max-width);
 }
 .icon {
@@ -233,9 +237,7 @@ p {
   vertical-align: bottom;
 }
 .icon:hover {
-  filter: brightness(0) saturate(100%) invert(71%) sepia(7%) saturate(717%) hue-rotate(335deg)
-    brightness(91%) contrast(95%);
-  /* filter: hue-rotate(230deg) saturate(47.5) brightness(40%); changes svg color on hover */
+  filter: brightness(0) invert(100%) sepia(91%) saturate(38%) hue-rotate(254deg) brightness(110%) contrast(110%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -347,10 +349,10 @@ p {
     width: 40px;
   }
   #tshirt-text {
-    color: var(--light-txt-color);
+    color: var(--main-txt-color);
   }
   #tshirt-text:hover {
-    color: var(--light-brown);
+    color: var(--main-accent-color);
   }
 }
 
