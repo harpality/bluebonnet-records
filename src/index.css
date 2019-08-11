@@ -104,7 +104,7 @@ p {
   max-height: 300px;
   min-height: 150px;
   width: 200px;
-  top: -90px;
+  top: -130px;
   left: -100px;
 }
 .text-align-center {
@@ -143,8 +143,8 @@ p {
 }
 
 .branch-svg {
-  width: 45%;
-  max-width: 225px;
+  width: 55%;
+  max-width: 300px;
 }
 #record-svg:hover > #record-outer-svg {
   filter: brightness(0) invert(28%) sepia(95%) saturate(1473%) hue-rotate(339deg) brightness(91%) contrast(93%);
@@ -280,7 +280,7 @@ p {
     margin-bottom: 0.33rem; /* compensate for extra space in img */
   }
   .branch-svg {
-    width: 33%;
+    width: 55%;
   }
   .branches-container {
     align-items: center;
@@ -355,8 +355,6 @@ p {
   }
 
   #announcements {
-    /* justify-content: center; */
-    /* align-items: center; */
     min-height: 72px;
   }
   .icon {
@@ -364,6 +362,8 @@ p {
   }
   #tshirt-text {
     color: var(--main-txt-color);
+    font-weight: normal;
+    text-decoration: underline;
   }
   #tshirt-text:hover {
     color: var(--main-accent-color);
@@ -384,3 +384,9 @@ p {
     order: 1;
   }
 }
+ @media screen and (min-width: 700px) {
+   .branch-svg {
+    transform: scale(3);
+    opacity: .2;
+   }
+ }
