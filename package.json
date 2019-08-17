@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "css-loader": "^2.1.1",
+    "g-sheets-api": "^1.0.2",
     "style-loader": "^0.23.1",
     "url-loader": "^2.0.0",
     "webpack": "^4.29.6",

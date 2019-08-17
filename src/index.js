@@ -1,7 +1,9 @@
 import marked from 'marked'
 import { config } from '../config.js'
+import sheetReader from 'g-sheets-api'
 import './index.css'
 
+/* Make page visible after load */
 document.onreadystatechange = function () {
     var state = document.readyState
     if (state == 'complete') {
@@ -10,49 +12,39 @@ document.onreadystatechange = function () {
     }
 }
 
-console.log('hello world')
-
-const id ='1VNr1aQHwS9lM_pJmVGreBDnB8_qPlzwh'
-
-function get_doc(id) {
-    const url = 'https://www.googleapis.com/drive/v3/files/' + id + '?alt=media'
-
-    console.log(self.fetch)
-    const authToken = {
-        access_token: "ya29.GltiBwckko_vkbqpgZtS9qbW0Jg8pRF_5SIt_A-2Xqc7UnXFP736q4GosqczLMKT0zvEc-w0dD0pYbnylBlzThcTyNNk8MtGIJQQ6wuLoBkTuSLN65vHdZ5kMGfN"
-    }
-    const mime = 'application/vnd.google-apps.file'
-
-    if (self.fetch) {
-        var setHeaders = new Headers();
-        setHeaders.append('Authorization', 'Bearer ' + authToken.access_token);
-        setHeaders.append('Content-Type', mime);
-
-        var setOptions = {
-            method: 'GET',
-            headers: setHeaders
-        };
-
-        fetch(url, setOptions)
-            .then(response => {
-                if (response.ok) {
-                    var reader = response.body.getReader();
-                    var decoder = new TextDecoder();
-                    reader.read().then(function (result) {
-                        var data = {}
-                        data = decoder.decode(result.value, { stream: !result.done });
-                        // Add to announcement-text
-                        console.log(data)
-                        document.getElementById('announcement-text').innerHTML = data
-                    });
-                }
-                else {
-                    console.log("Response wast not ok");
-                }
-            }).catch(error => {
-                console.log("There is an error " + error.message);
-            });
-    }
+/* Options to pull google sheet */
+const options = {
+    sheetId: '1m2W_8d5TjSIIpL-f7-ecrcObqpuyp8SuTXMRL4rJQP4',
+    returnAllResults: true
+}
+const getAnnouncements = function (data) {
+    return data.filter(d => d.type == 'announcement')[0].data
+}
+const populateAnnouncements = function (text) {
+    document.getElementById('announcement-text').innerHTML = text
+}
+const getHoursAndHeaders = function (data) {
+    return data.filter(d => d.type == 'hours')
+}
+const populateHeaders = function (arr) {
+    const hoursHeader = document.getElementById('hours-header')
+    arr.forEach(h => {
+        hoursHeader.innerHTML += `<div><strong>${h.header}</strong></div>`
+    })
 }
 
-get_doc(id)
+const populateHours = function (data) {
+    const hoursData = document.getElementById('hours-data')
+    data.forEach(d => {
+        hoursData.innerHTML += `<div>${d.data}</div>`
+    })
+}
+
+sheetReader(options, data => {
+    const announcementText = getAnnouncements(data)
+    populateAnnouncements(announcementText)
+
+    const hoursAndHeaders = getHoursAndHeaders(data)
+    populateHeaders(hoursAndHeaders)
+    populateHours(hoursAndHeaders)
+})

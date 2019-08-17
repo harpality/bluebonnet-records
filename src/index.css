@@ -2,25 +2,12 @@
 
 :root {
   --main-purp-color: #312163;
-  /* --main-bg-color: #fbfaf9; */
   --main-bg-color: white;
-  /* --main-accent-color: #b7a196; */
-  /* --main-accent-color: #d16666; */
   --main-accent-color: #db3a34;
-  /* --main-txt-color: #605e5c; */
   --main-txt-color: #42403f;
   --main-font: 'Nunito', sans-serif;
   --max-width: 90vw;
   font-weight: 600;
-}
-
-/* loading effect */
-#load{
-    width:calc(100% - 2rem);
-    height: calc(100% -2rem);
-    position:fixed;
-    background-color: pink;
-    z-index:9999;
 }
 
 #contents {
@@ -384,7 +371,7 @@ p {
     order: 1;
   }
 }
- @media screen and (min-width: 700px) {
+ @media screen and (min-width: 900px) and (min-height: 900px) {
    .branch-svg {
     transform: scale(3);
     opacity: .2;
