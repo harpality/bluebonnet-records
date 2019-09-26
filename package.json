@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "dropbox": "^4.0.16",
-    "marked": "^0.6.1"
+    "marked": "^0.7.0"
   },
   "devDependencies": {
     "css-loader": "^2.1.1",
