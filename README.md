@@ -10,7 +10,13 @@ The following instructions will get you a copy of the project up and running on 
 
 ### Installation
 
-Please clone and download this folder to your hard disk and install dependencies using `npm install`. Bluebonnet Records uses Webpack for module bundling and minification. Run `npm run dev` to initiate the development server on your machine.
+Please clone and download this folder to your hard disk and install dependencies using `npm install`.
+
+## Functionality
+
+Bluebonnet Records uses Webpack for module bundling and minification. Run `npm run dev` to initiate the development server on your machine.
+
+🚀 Deployed at https://bluebonnet-records.com/
 
 ## Built With
 
