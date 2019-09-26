@@ -1,11 +1,26 @@
 # Bluebonnet Records
 
-Basic code for Bluebonnet Records landing page.
+_Bluebonnet Records_ is a fully mobile-responsive website created for the client, Bluebonnet Records, a record store located in Lockhart, TX. The layout clearly presents shop details, links to maps, social media, and stores. Announcements and store updates are pulled from a markdown file using Google Sheets. The website is built with JavaScript, CSS3, HTML, Node.js, Webpack, SVGs, and Google Sheets.
 
-## Development Notes
+![Screenshot](screenshot.png)
 
-Project uses Webpack for module bundling and minification. Run `npm run dev` to initiate.
+## Getting Started
 
-## Additional
+The following instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Updates/Announcements are pulled from a markdown file in Dropbox.
+### Installation
+
+Please clone and download this folder to your hard disk and install dependencies using `npm install`. Bluebonnet Records uses Webpack for module bundling and minification. Run `npm run dev` to initiate the development server on your machine.
+
+## Built With
+
+- JavaScript
+- Node.js
+- CSS
+- HTML
+- Webpack
+
+## Authors
+
+- Harpal Assi
+- David Thompson
