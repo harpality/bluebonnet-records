@@ -16,7 +16,7 @@ Please clone and download this folder to your hard disk and install dependencies
 
 Bluebonnet Records uses Webpack for module bundling and minification. Run `npm run dev` to initiate the development server on your machine.
 
-🚀 Deployed at https://bluebonnet-records.com/
+🚀 This design was deployed as the company's first website for a year, launching in mid-2019, however this version is no longer active
 
 ## Built With
 
