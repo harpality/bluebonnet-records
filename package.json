@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "dropbox": "^4.0.16",
-    "marked": "^0.7.0"
+    "marked": "^4.0.10"
   },
   "devDependencies": {
     "css-loader": "^2.1.1",
