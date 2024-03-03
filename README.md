@@ -26,7 +26,3 @@ Bluebonnet Records uses Webpack for module bundling and minification. Run `npm r
 - HTML
 - Webpack
 
-## Authors
-
-- Harpal Assi
-- David Thompson
